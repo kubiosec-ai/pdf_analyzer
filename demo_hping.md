@@ -1,4 +1,3 @@
-```markdown
 # HPING Tutorial
 
 **by Philippe Bogaerts, alias xxradar**  
@@ -102,6 +101,5 @@ Hping can be manipulated to execute commands on a remote machine if it can be st
 HPING is a valuable tool for understanding TCP/IP protocols, auditing firewalls/IDS systems, and experimenting with packet-crafting. However, usage must be responsible to prevent unauthorized damage. It is recommended for educational, security auditing, and personal enjoyment purposes only.
 
 **Feedback and remarks are welcome at:** [xxradar@radarhack.com](mailto:xxradar@radarhack.com)
-```
 
 The Markdown document provides a clean and organized presentation of the original tutorial while preserving all technical details. It highlights important points, provides contextual explanations, and organizes content into sections with examples and commands in code blocks for clarity.
