@@ -11,7 +11,7 @@ jobs:
       
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -26,3 +26,9 @@ jobs:
     - name: Run tests
       run: |
         python main.py
+
+    - name: Upload downloaded.pdf
+      uses: actions/upload-artifact@v3
+      with:
+        name: downloaded-pdf
+        path: ./downloaded.pdf
