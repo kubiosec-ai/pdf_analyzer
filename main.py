@@ -4,6 +4,7 @@ import pypdf
 import os
 from openai import OpenAI
 
+
 def download_pdf(url, output_path):
     try:
         print("Starting PDF download...")  # Debugging statement
