@@ -66,6 +66,10 @@ def main():
         analysis = analyze_text_with_openai(extracted_text)
         print("\nAnalysis of the extracted text:\n")
         print(analysis)
+
+        # Save analysis to a file
+        with open("analysis.md", "w") as f:
+            f.write(analysis)
     else:
         print("PDF file not found.")
 
