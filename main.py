@@ -1,6 +1,6 @@
 import requests
 import urllib3
-import PyPDF2
+import pypdf
 import os
 from openai import OpenAI
 
@@ -27,10 +27,9 @@ def download_pdf(url, output_path):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-
 def extract_text_from_pdf(pdf_path):
     with open(pdf_path, 'rb') as f:
-        reader = PyPDF2.PdfReader(f)  # Update from PdfFileReader to PdfReader
+        reader = pypdf.PdfReader(f)  # Update from PyPDF2.PdfReader to pypdf.PdfReader
         text = ''
         for page in reader.pages:
             text += page.extract_text() + '\n'
@@ -55,7 +54,6 @@ def main():
     print(f"Downloading PDF from: {pdf_url} to {output_pdf_path}")
     download_pdf(pdf_url, output_pdf_path)
     print("Download completed.")
-
 
     # Step 2: Extract text from the downloaded PDF
     if os.path.exists(output_pdf_path):
