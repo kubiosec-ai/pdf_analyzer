@@ -49,7 +49,7 @@ def analyze_text_with_openai(text):
 
 def main():
     pdf_url = "https://www.radarhack.com/tutorial/getting_started_with_OWASP_WebGoat_and_SOAPUI.pdf"
-    output_pdf_path = "./downloaded_webgoat.pdf"
+    output_pdf_path = "./downloaded.pdf"
     
     # Step 1: Download the PDF
     print(f"Downloading PDF from: {pdf_url} to {output_pdf_path}")
