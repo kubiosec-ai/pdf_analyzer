@@ -3,6 +3,7 @@ import urllib3
 import pypdf
 import os
 from openai import OpenAI
+from security import safe_requests
 
 
 def download_pdf(url, output_path):
@@ -12,7 +13,7 @@ def download_pdf(url, output_path):
         # Disable SSL warnings
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-        response = requests.get(url, timeout=10, verify=False)
+        response = safe_requests.get(url, timeout=10, verify=False)
         print(f"HTTP GET request sent. Status code: {response.status_code}")  # Debugging statement
 
         if response.status_code == 200:
