@@ -145,7 +145,7 @@ pulsar-client==3.5.0
 pyarrow==17.0.0
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
-pyautogen==0.2.26
+ag2==0.2.26
 pycparser==2.22
 pydantic @ file:///home/conda/feedstock_root/build_artifacts/pydantic_1712899199321/work
 pydantic_core @ file:///Users/runner/miniforge3/conda-bld/pydantic-core_1712848997898/work
